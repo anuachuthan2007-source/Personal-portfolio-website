@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>My Portfolio</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Hello, I'm Anuvarshini</h2>
+    <p>Information Technology Student</p>
+    <button onclick="scrollToContact()">Contact Me</button>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am an Information Technology student interested in
+        software development, web development and problem solving.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>My Skills</h2>
+
+    <div class="cards">
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>JavaScript</div>
+        <div>Python</div>
+        <div>DBMS</div>
+        <div>Firebase</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="projects">
+        <div class="project">
+            <h3>College Event Management</h3>
+            <p>Web application for managing college events.</p>
+        </div>
+
+        <div class="project">
+            <h3>Weather Dashboard</h3>
+            <p>Application for checking weather information.</p>
+        </div>
+
+        <div class="project">
+            <h3>Campus Job Portal</h3>
+            <p>Portal for finding student job opportunities.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <form onsubmit="submitForm(event)">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <p id="formMessage"></p>
+</section>
+
+<footer>
+    <p>© 2026 My Portfolio</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
